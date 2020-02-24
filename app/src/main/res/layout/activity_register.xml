@@ -29,7 +29,6 @@
                 android:layout_width="160dp"
                 android:layout_height="160dp"
                 android:layout_marginTop="8dp"
-                android:onClick="handleGambar"
                 android:background="@drawable/profile_picture"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.545"
@@ -44,6 +43,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/image_profile"
                 app:layout_constraintEnd_toEndOf="@+id/image_profile"
                 app:srcCompat="@drawable/edit_icon"
+                android:onClick="handleChangeAvatar"
                 />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -147,7 +147,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Homepage"
-                    android:inputType=""
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -183,13 +182,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
-        android:onClick="handleOK"
         android:background="@drawable/btn_red_large"
         android:text="@android:string/ok"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:onClick="handleOk"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
